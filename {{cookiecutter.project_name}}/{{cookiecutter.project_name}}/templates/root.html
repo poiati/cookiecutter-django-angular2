@@ -9,6 +9,7 @@
     <script src="{% static 'jspm_packages/system.js' %}" type="text/javascript" charset="utf-8"></script>
     <script src="{% static 'config.js' %}" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
+      System.import("{% static 'bundles/systemjs-libraries.js' %}");
       System.import("{% static 'app/main.ts' %}");
     </script>
   </head>

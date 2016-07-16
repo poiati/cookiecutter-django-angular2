@@ -1,0 +1,38 @@
+{
+  "scripts": {
+    "postinstall": "jspm install && node build.js"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.39",
+    "systemjs-builder": "^0.15.16"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "angular"
+    },
+    "dependencies": {
+      "@angular/common": "npm:@angular/common@^2.0.0-rc.4",
+      "@angular/core": "npm:@angular/core@^2.0.0-rc.4",
+      "@angular/forms": "npm:@angular/forms@^0.1.1",
+      "@angular/http": "npm:@angular/http@^2.0.0-rc.4",
+      "@angular/platform-browser": "npm:@angular/platform-browser@^2.0.0-rc.4",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@^2.0.0-rc.4",
+      "@angular/router": "npm:@angular/router@^3.0.0-alpha.7",
+      "css": "github:systemjs/plugin-css@^0.1.21",
+      "es6-shim": "npm:es6-shim@^0.35.1",
+      "jade": "github:johnsoftek/plugin-jade@^1.1.2",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.3",
+      "rxjs": "npm:rxjs@^5.0.0-beta.6",
+      "zone.js": "npm:zone.js@^0.6.12"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.8.10"
+    },
+    "overrides": {
+      "npm:reflect-metadata@0.1.3": {
+        "map": {},
+        "jspmNodeConversion": true
+      }
+    }
+  }
+}

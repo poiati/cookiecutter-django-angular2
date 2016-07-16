@@ -1,0 +1,19 @@
+{%- raw -%}
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Django Angular2</title>
+    <script src="{% static 'bundles/libraries.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'jspm_packages/system.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'config.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      System.import("{% static 'app/main.ts' %}");
+    </script>
+  </head>
+  <body>
+    <app></app>
+  </body>
+</html>
+{%- endraw -%}

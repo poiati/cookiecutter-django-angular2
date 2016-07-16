@@ -1,0 +1,5 @@
+node_modules
+jspm_packages
+angular/bundles
+*.pyc
+__pycache__
